@@ -1,7 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const line =
-  "Sorry boss, the water heater flooded the hallway and I'm waiting on the plumber, won't make it in today.";
+  "Sorry boss, the water heater burst and the hallway's ankle-deep, plumber's coming at 9, can't get out.";
 
 if (line.length < 1 || line.length > 140 || line.trim().length === 0) {
   throw new Error(`entry must be 1-140 characters, got ${line.length}`);
